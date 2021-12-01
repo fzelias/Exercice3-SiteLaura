@@ -3,3 +3,78 @@
 @import "./_fonts"
 @import "./_icones"
 
+body
+    font-family: "Raleway Regular"
+
+header
+    height: 100vh
+    background: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../../public/img/hero-bg.jpg")
+    a
+        &:hover
+            color: orange !important
+    .h-90
+        height: 90%
+        h1
+            font-family: "Satisfy"
+        p
+            letter-spacing: 1.5px
+
+#about
+    >h2
+        max-width: max-content
+        &::before
+            content: "ABOUT ME"
+            font-size: 70px
+            position: absolute
+            left: 50%
+            width: 200%
+            color: lightgray
+            z-index: -1
+            transform: translate(-45%, -40%)
+            @media (max-width: 576px)
+                transform: translate(-45%, -40%)
+                width: 150%
+                font-size: 40px
+    .col-8
+        .row
+            .col-6
+                p
+                    &::before
+                        content: ">"
+                        color: orange
+                        margin: 0 15px
+                        font-size: 20px
+.w-90
+    width: 90%
+.h-10
+    height: 10px
+.text-orange
+    color: #e67a00
+
+#contact
+    .col-12
+        >.icon
+            height: 40px
+            width: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+
+footer
+    background: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../../public/img/footer-bg.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    h2
+        font-family: "Satisfy"
+    .btn-top
+        bottom: 10px
+        right: 10px
+
+.w-md-25
+    @media (min-width: 756px)
+        width: 25% !important
+
+button,input,textarea
+    &:focus
+        outline: none !important

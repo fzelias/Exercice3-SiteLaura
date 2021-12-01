@@ -7576,7 +7576,7 @@ textarea.form-control-lg {
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.3125rem + 0.75vw) !important;
 }
 
 .fs-5 {
@@ -11842,7 +11842,7 @@ textarea.form-control-lg {
   }
 
   .fs-4 {
-    font-size: 1.5rem !important;
+    font-size: 1.875rem !important;
   }
 }
 @media print {
@@ -18008,38 +18008,96 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-header {
-  height: 100vh;
-  background: linear-gradient(rgba(38, 38, 58, 0.7), rgba(39, 38, 48, 0.6)), url("../../public/img/hero-bg.jpg") no-repeat;
-  background-position: top center;
-  background-size: cover;
+body {
+  font-family: "Raleway Regular";
 }
 
-.h-90 {
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(38, 38, 58, 0.7), rgba(39, 38, 48, 0.6)), url("../../public/img/hero-bg.jpg");
+}
+header a:hover {
+  color: orange !important;
+}
+header .h-90 {
   height: 90%;
+}
+header .h-90 h1, header .h-90 .h1 {
+  font-family: "Satisfy";
+}
+header .h-90 p {
+  letter-spacing: 1.5px;
 }
 
 #about > h2, #about > .h2 {
-  font-size: 40px;
   max-width: max-content;
 }
 #about > h2::before, #about > .h2::before {
   content: "ABOUT ME";
+  font-size: 70px;
   position: absolute;
-  font-size: 60px;
-  width: 300%;
-  left: -100%;
-  top: -40px;
-  z-index: -1;
+  left: 50%;
+  width: 200%;
   color: lightgray;
+  z-index: -1;
+  transform: translate(-45%, -40%);
 }
-#about .row .col-7 p {
-  font-size: 15px;
+@media (max-width: 576px) {
+  #about > h2::before, #about > .h2::before {
+    transform: translate(-45%, -40%);
+    width: 150%;
+    font-size: 40px;
+  }
 }
-#about .row .col-7 p::before {
+#about .col-8 .row .col-6 p::before {
   content: ">";
   color: orange;
-  margin-right: 10px;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.h-10 {
+  height: 10px;
+}
+
+.text-orange {
+  color: #e67a00;
+}
+
+#contact .col-12 > .icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background: linear-gradient(rgba(38, 38, 58, 0.7), rgba(39, 38, 48, 0.6)), url("../../public/img/footer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer h2, footer .h2 {
+  font-family: "Satisfy";
+}
+footer .btn-top {
+  bottom: 10px;
+  right: 10px;
+}
+
+@media (min-width: 756px) {
+  .w-md-25 {
+    width: 25% !important;
+  }
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
